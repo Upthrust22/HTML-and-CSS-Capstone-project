@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F6F6;
+    color: gray;
+}
+
+header {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+
+
+.nav-link {
+    margin: 30px 60px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #61677F;
+}
+
+a:hover {
+    font-size: 15px;
+    cursor: pointer;  
+}
+
+.main-heading {
+    display: none;
+}
+
+.logo-main {
+    width: 100px;
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    color: #F2F2F2;
+    background-color: #8146FF;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 20px 0 20px auto;
+}
+
+.btn:hover {
+    background-color: #693cca;
+    transition: 0.5s;
+}
+
+.reg-patient {
+    background-color: #FFFFFF;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 30px 50px;
+    color: rgb(22, 19, 19);
+}
+.div-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 5px;
+}
+
+input {
+    border: 1px solid rgb(87, 87, 203);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 320px;
+    margin: 10px;
+}
+
+.cover {
+    width: 670px;
+}
+
+/* Display for Small Screens */
+@media screen and (max-width: 760px) {
+    body {
+        width: 100%;
+    }
+    header {
+        display: block;
+        margin: 0;
+        padding: 20px;
+    }
+
+    header> h3 {
+        display: none;
+    }
+
+    .nav-link {
+        margin: 10px 0 10px 25px;
+    }
+
+    .main-heading {
+        display: block;
+        margin: 30px 0 0;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .reg-patient {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .div-inputs {
+        display: block;
+    }
+
+    input {
+        width: 100% !important;
+        margin: 5px 0;
+        
+    }
+
+    .btn {
+        margin: 10px auto;
+    }
+    
+}

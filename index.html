@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;800&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Medix</title>
+</head>
+<body>
+    <header class="nav white flex">
+        <div class="main-logo">
+            <img id="logo-main" class="logo-main" src="assets/images/medix-logo.png" alt="">
+        </div>
+        <form class="input hidden">
+            <input class="search" type="search" placeholder="&#128269;  Search by patients...">
+        </form>
+        <div class="nav-icons flex">
+            <img class="round" src="assets/dashboardIcons/notification.png" alt="">
+            <img class="nav-img round" src="assets/images/doctor-standing-with-folder-stethoscope1.png" alt="">
+            <select name="" id="">
+                <option value="">Deko</option>
+            </select>
+        </div>
+    </header>
+
+    <aside id="aside" class="aside white flex">
+        <div class="main-logo hidden">
+            <img id="logo-main" class="logo-main" src="assets/images/medix-logo.png" alt="">
+        </div>
+        <div class="aside-ul">
+            <ul class="dashboard-ul">
+                <li class="dashboard-items flex">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/dashboard.png" alt="">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="dashboard-items flex">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/appointments.png" alt="">
+                    <a href="#">Appointments</a>
+                </li>
+                <li class="dashboard-items flex">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/doc.png" alt="">
+                    <a href="#">Doctors</a>
+                </li>
+                <li class="dashboard-items flex hidden">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/departments.png" alt="">
+                    <a href="#">Departments</a>
+                </li>
+                <li class="dashboard-items flex hidden">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/patients.png" alt="">
+                    <a href="#">Patients</a>
+                </li>
+                <li class="dashboard-items flex">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/chats.png" alt="">
+                    <a href="#">Chats</a>
+                </li>
+                <li class="dashboard-items flex">
+                    <img class="aside-icons hidden" src="assets/dashboardIcons/calls.png" alt="">
+                    <a href="#">Calls</a>
+                </li>
+            </ul>
+        </div>
+        <div id="reg-patients" class="reg-patients hidden">
+        <a href="form.html"><button class="btn reg-btn">+ Register Patient</button></a>
+        </div>
+        <div class="aside-img hidden">
+            <img class="main-img" src="assets/images/image216.png" alt="clinic attendant with laptop waiting to attend to patients" class="main-img">
+        </div>
+        <div class="aside-settings flex hidden">
+            <img class="aside-icons" src="assets/dashboardIcons/settings.png" alt="">
+            <p class="setting"><a>Settings</a></p>
+            
+        </div>
+    </aside>
+
+
+    <main>
+        <div class="patient-visit white hidden">
+            <div class="flex">
+                <h4>Patient Visit By Department</h4>
+                <select class="visit-freq">
+                    <option value="weekly">Weekly</option>
+                    <option value="daily">Daily</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div>
+                <div class="dept-visit flex ">
+                    <span class="cardiology"></span>
+                    <p class="p-dept">Cardiology</p>
+                    <p>40%</p>
+               </div>     
+     
+               <div class="dept-visit flex">
+                    <span class="neurology"></span> 
+                    <p class="p-dept">Neurology</p>
+                    <p>20%</p>
+               </div>
+               <div class="dept-visit flex">
+                    <span class="dermatology"></span> 
+                    <p class="p-dept">Dermatology</p>
+                    <p>30%</p>
+               </div>
+            </div>
+        </div>
+
+        <div class="staff white hidden">
+            <div class="staff-dept flex">
+                <h4>Employees</h4> 
+                <p class="sm-text">Number of staffs according to department</p>
+            </div>
+            <div class="progress-wrapper flex">
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 30%;">30%</div>
+                    <div class="progress-title">Emergency</div>
+                </div>
+        
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 55%;">55%</div>
+                    <div class="progress-title">ICU</div>
+                </div>
+        
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 80%;">80%</div>
+                    <div class="progress-title">Neurology</div>
+                </div>
+        
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 40%;">40%</div>
+                    <div class="progress-title">Cardiology</div>
+                </div>
+            
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 65%;">65%</div>
+                    <div class="progress-title">Gynecology</div>
+                </div>
+            
+                <div class="progress-container">
+                    <div class="progress-bar" style="height: 82%;">82%</div>
+                    <div class="progress-title">Urology</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dept-list-wrapper white">
+            <div class="flex dept-list">
+                <h4>Department List</h4>
+                <button class="btn dept-list-btn hidden">Add Department</button>
+            </div>
+            <table>
+                <thead class="hidden">
+                    <tr>
+                        <th>Department Name</th>
+                        <th>Doctor</th>
+                        <th>Gender</th>
+                        <th>Head of Department</th>
+                        <th>Action</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ICU</td>
+                        <td>
+                            <img class="td-icon" src="assets/actionIcons/kicker.png" alt="">
+                            Kicker Nicil
+                        </td>
+                        <td class="hidden">Male</td>
+                        <td class="hidden">Heidry Kon</td>
+                        <td class="hidden">
+                            <img src="assets/actionIcons/edit.png" alt="">
+                            <img src="assets/actionIcons/Group.png" alt="">
+                            <img src="assets/actionIcons/delete.png" alt="">
+                        </td>
+                        <td><span class="active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Emergency</td>
+                        <td>
+                            <img class="td-icon" src="assets/actionIcons/killain.png" alt="">
+                            Kilian James
+                        </td>
+                        <td class="hidden">Male</td>
+                        <td class="hidden">Thomas Fletcher</td>
+                        <td class="hidden">
+                            <img src="assets/actionIcons/edit.png" alt="">
+                            <img src="assets/actionIcons/Group.png" alt="">
+                            <img src="assets/actionIcons/delete.png" alt="">
+                        </td>
+                        <td><span class="inactive">Inactive</span></td>
+                    </tr>
+                    <tr>
+                        <td>Gynecology</td>
+                        <td>
+                            <img class="td-icon" src="assets/actionIcons/deler.png" alt="">
+                            Deler Karon
+                        </td>
+                        <td class="hidden">Female</td>
+                        <td class="hidden">Jonathan Doe</td>
+                        <td class="hidden">
+                            <img src="assets/actionIcons/edit.png" alt="">
+                            <img src="assets/actionIcons/Group.png" alt="">
+                            <img src="assets/actionIcons/delete.png" alt="">
+                        </td>
+                        <td><span class="active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Neurology</td>
+                        <td>
+                            <img class="td-icon" src="assets/actionIcons/micheal.png" alt="">
+                            Michel Jon
+                        </td>
+                        <td class="hidden">Male</td>
+                        <td class="hidden">Michel Liyo</td>
+                        <td class="hidden">
+                            <img src="assets/actionIcons/edit.png" alt="">
+                            <img src="assets/actionIcons/Group.png" alt="">
+                            <img src="assets/actionIcons/delete.png" alt="">
+                        </td>
+                        <td><span class="active">Active</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+
+    </main>
+
+</body>
+</html>

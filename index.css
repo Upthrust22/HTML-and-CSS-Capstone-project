@@ -1,0 +1,408 @@
+/* General Classes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    max-width: 90%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F6F6;
+    color: #5F6868;            
+}
+
+main {
+    width: 85%;
+    margin-left: 200px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:"p-visit staff"
+                        "dept-list dept-list";
+
+}
+
+.white {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #61677F;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: 15px;  
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 13px;
+}
+
+.flex {
+    display: flex;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.btn {
+    color: #FFFFFF;
+    background-color: #8146FF;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #693cca;
+    transition: 0.5s;
+}
+
+.active,
+.inactive {
+    background-color: lightgray;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+}
+
+.active {
+    color: #4CAF50;
+}
+
+.inactive {
+    color: #cc111e;
+}
+
+/* Aside  */
+.aside {
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    box-shadow: 0 0 6px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* .logo-main {
+
+} */
+
+.dashboard-ul {
+    list-style: none;
+}
+
+.dashboard-items {
+    gap: 20px;
+    margin: 10px;     
+   
+}
+
+.dashboard-items a {
+    color: gray;
+}
+
+.dashboard-items:first-child {
+    margin-top: 0;
+}
+
+.aside-icons {
+    width: 25px;
+}
+
+
+/* Header */
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-right: 0;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    z-index: 1;
+}
+
+.nav .main-logo {
+    display: none;
+}
+
+.search {
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid lightgray;
+}
+
+.nav-icons {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-img {
+    width: 30px;
+} 
+
+.reg-patients {
+    margin: 0 auto;
+}
+
+.main-img {
+    width: 70%;
+}
+
+/* Patient Visit By Dept */
+.patient-visit {
+    grid-area: p-visit;
+    width: 95%;
+}
+
+.dept-visit {
+    justify-content: space-between;
+}
+
+.dept-visit> p {
+    padding: 20px;
+}
+
+.cardiology,
+.neurology,
+.dermatology {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.cardiology {
+    background-color: #DB48FF;
+}
+.neurology {
+    background-color: #579AFF;
+}
+.dermatology {
+    background-color: #8146FF;
+}
+
+.patient-visit,
+.staff,
+.dept-list-wrapper {
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.visit-freq {
+    font-size: 8px;
+    font-weight: 500;
+    width: 45px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    border: 0.5px solid #6C9EFF;
+    color: #6C9EFF;
+}
+
+
+/* Employees according to Dept */
+.staff {
+    grid-area: staff;
+}
+
+.staff-dept {
+    justify-content: space-between;
+}
+
+.progress-container {
+    width: 40px;
+    height: 120px;
+    justify-content: center;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    margin: 20px 5px 20px 35px;
+    /* float: left; */
+    text-align: center;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #579AFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 11px;
+}
+
+.progress-title {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 10px;
+}
+
+/* Different colors for each progress bar */
+.progress-container:nth-child(2) .progress-bar {
+    background-color: #DB48FF;
+}
+
+.progress-container:nth-child(3) .progress-bar {
+    background-color: #8146FF;
+}
+
+.progress-container:nth-child(4) .progress-bar {
+    background-color: #FF447C;
+}
+
+.progress-container:nth-child(5) .progress-bar {
+    background-color: #4CB050;
+    ;
+}
+.progress-container:nth-child(6) .progress-bar {
+    background-color: #FF805D;
+}
+
+/* Department List */
+.dept-list-wrapper {
+    grid-area: dept-list;
+    width: 97%;
+    margin-top: 5px;
+}
+
+.dept-list {
+    margin-bottom: 10px;
+}
+
+.dept-list-btn {
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: #FAFAFA;
+}
+
+th {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5F6868;
+    padding: 10px 15px;
+}
+
+td {
+    font-size: 13px;
+    color: #5F6868;
+    padding: 10px 15px;
+}
+
+.td-icon {
+    width: 25px;
+}
+
+/* Media Query for Small screens */
+@media screen and (max-width: 760px){
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .white {
+        background-color: transparent;
+    }
+
+    .hidden {
+        display: none;
+    }
+   
+    .dashboard-ul .dashboard-items.hidden {
+        display: none;
+    }
+
+
+    .nav {
+        width: 100%;
+        background-color: #FFFFFF;
+        left: 0;
+    }
+
+    .nav .main-logo {
+        display: block;
+    }
+
+    .aside {
+        position: static;
+        margin: 60px auto 0;
+        box-shadow: 0 0 0 transparent;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .dashboard-ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dashboard-items {
+        background-color: #FFFFFF;
+        border-radius: 5px;  
+    }
+
+    .dashboard-items a {
+        text-align: center;
+        color: gray;
+        margin: 0 5px;
+        padding: 5px;
+        
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .dept-list-wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    tr {
+        margin: 0 5px;
+    }
+
+    td {
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 5px;
+    }
+}
