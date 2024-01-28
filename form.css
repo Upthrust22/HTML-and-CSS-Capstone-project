@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     background-color: #F6F6F6;
@@ -15,7 +15,7 @@ header {
     display: flex;
     background-color: #FFFFFF;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 

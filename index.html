@@ -79,7 +79,7 @@
 
     <main>
         <div class="patient-visit white hidden">
-            <div class="flex">
+            <div class="h-visit flex">
                 <h4>Patient Visit By Department</h4>
                 <select class="visit-freq">
                     <option value="weekly">Weekly</option>
@@ -163,8 +163,8 @@
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="tbody-container">
+                    <!-- <tr>
                         <td>ICU</td>
                         <td>
                             <img class="td-icon" src="assets/actionIcons/kicker.png" alt="">
@@ -223,12 +223,13 @@
                             <img src="assets/actionIcons/delete.png" alt="">
                         </td>
                         <td><span class="active">Active</span></td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div> 
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>

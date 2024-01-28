@@ -81,11 +81,11 @@ p {
 
 }
 
-.active {
+.Active {
     color: #4CAF50;
 }
 
-.inactive {
+.Inactive {
     color: #cc111e;
 }
 
@@ -177,6 +177,10 @@ p {
     width: 95%;
 }
 
+.h-visit {
+    justify-content: space-between;
+}
+
 .dept-visit {
     justify-content: space-between;
 }
@@ -251,6 +255,9 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
+    border-radius: 8px;
+    border: 3px solid #F6F6F6;
+    /* padding: 0 auto; */
     color: white;
     font-size: 11px;
 }
